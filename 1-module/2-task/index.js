@@ -11,7 +11,8 @@ function print (text) {
  * Эту функцию нужно поменять так,
  * чтобы функция sayHello работала корректно
  */
-function isValid (name) {
+function isValid (uName) {
+    return ((uName) && (uName !== "") && (uName.length >= 4) && (uName.indexOf(" ") === -1));
 }
 
 function sayHello () {
